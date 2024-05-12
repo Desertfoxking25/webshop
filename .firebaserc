@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "autoalkatresz-webkeret": {
+      "hosting": {
+        "webkeret": [
+          "autoalkatresz-webkeret"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "autoalkatresz-webkeret"
+  }
+}

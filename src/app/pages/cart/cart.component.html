@@ -1,0 +1,15 @@
+<ul class="items">
+    <mat-card class="mat-card">
+        <mat-card-header>
+            <h2>A kosár tartalma</h2>
+        </mat-card-header>
+        <mat-card-content>
+            <div class="listitem" *ngFor="let item of cartItems | async">
+                <span>{{ item.name }}</span>
+                <span>{{ item.price }}</span>
+                <span><button mat-raised-button color="primary" (click)="removeFromCart(item)">Törlés</button></span>
+                <mat-divider [inset]="true"></mat-divider>
+            </div>
+        </mat-card-content>
+    </mat-card>
+</ul>

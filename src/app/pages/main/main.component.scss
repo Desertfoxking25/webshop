@@ -1,0 +1,45 @@
+.mat-card {
+    background-color: #6962AD;
+    width: 450px;
+    height: 450px;
+    margin: 16px;
+}
+.name{
+    color:  #96E9C6;
+    cursor: pointer;
+    text-decoration: underline;
+}
+.footer-content{
+    margin: 16px;
+    display: flex;
+    justify-content: space-between;
+}
+.footer{
+    color:  #96E9C6;
+    align-items: center;
+}
+.icon{
+    background-color: #6962AD;
+    cursor: pointer;
+    width: 75px;
+    color: #96E9C6;
+    border-radius: 4px;
+}
+img {
+    width: 300px;
+    height: 300px;
+    margin: 2px 2px 2px 2px;
+    display: block;
+    margin: auto;
+}
+.items{
+    background-color: #83C0C1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0px;
+}
+.items :hover{
+    background-color: #6C22A6;
+    border-radius: 4px;
+}

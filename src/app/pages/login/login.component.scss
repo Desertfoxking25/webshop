@@ -1,0 +1,37 @@
+.forms{
+    background-color: #83C0C1;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+}
+.box{
+    background-color: #6962AD;
+    color: #96E9C6;
+    margin: 50px;
+    align-items: center;
+    width: 350px;
+    height: 350px;
+    border-radius: 30px;
+}
+mat-form-field{
+    color: #96E9C6;
+    width: 90%;
+    font-size: medium;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 18px;
+}
+h1{
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-weight: bold;
+}
+span{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    padding: 0px 5px 0px 5px;
+}

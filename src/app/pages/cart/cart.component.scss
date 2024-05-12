@@ -1,0 +1,27 @@
+.items{
+    background-color: #83C0C1;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+}
+.mat-card{
+    background-color: #6962AD;
+    color: #96E9C6;
+    margin: 20px;
+    align-items: center;
+}
+.items :hover{
+    background-color: #6C22A6;
+    border-radius: 4px;
+}
+.listitem{
+    color: #96E9C6;
+    font-size: medium;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px, 20px;
+}
+span{
+    padding: 5px 5px 5px 5px;
+}

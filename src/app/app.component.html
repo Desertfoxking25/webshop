@@ -1,0 +1,25 @@
+<mat-sidenav-container>
+    <mat-sidenav #sidenav>
+      <app-menu (selectedPage)="changePage($event)" [currentPage]="page" *ngIf="page" (onCloseSidenav)="onClose($event, sidenav)" [loggedInUser]="loggedInUser" (onLogout)="logout($event)"></app-menu>
+    </mat-sidenav>
+    <mat-sidenav-content>
+      <mat-toolbar color="primary">
+        <div class="hamburger-menu-wrapper">
+          <button mat-icon-button (click)="onToggleSidenav(sidenav)">
+            <mat-icon>menu</mat-icon>
+          </button>
+        </div>
+        <div class="title">Autoalkatrészek</div>
+        <div class="navigation-wrapper">
+          <ul class="navigation-items">
+            <li><a routerLink="/main">Főoldal</a></li>
+            <li><a routerLink="/cart">Kosár</a></li> 
+            <li *ngIf="!(loggedInUser)"><a routerLink="/login">Bejelentkezés</a></li>
+            <li *ngIf="loggedInUser"><a routerLink="/main" (click)="logout()">Kijelentkezés</a></li>
+            <li *ngIf="!(loggedInUser)"><a routerLink="/signup">Regisztráció</a></li>
+          </ul>
+        </div>
+      </mat-toolbar>
+      <router-outlet></router-outlet>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
