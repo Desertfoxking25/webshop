@@ -14,7 +14,8 @@ export class LoginComponent implements OnDestroy{
  
   email = new FormControl('');
   password = new FormControl('');
-
+  // email: test@gmail.com
+  // jelszó: testpw 
   loadingSubscription?: Subscription;
   
   loading: boolean = false;
